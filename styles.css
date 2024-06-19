@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+   --color-Nutmeg: hsl(14, 45%, 36%);
+    --color-Dark_Raspberry: hsl(332, 51%, 32%);
+    --color-White: hsl(0, 0%, 100%);
+    --color-Rose_White: hsl(330, 100%, 98%);
+    --color-Eggshell: hsl(30, 54%, 90%);
+    --color-Light_Grey: hsl(30, 18%, 87%);
+    --color-Wenge_Brown: hsl(30, 10%, 34%);
+    --color-Dark_Charcoal: hsl(24, 5%, 18%);
+}
+body {
+    background-color: var(--color-Eggshell);
+    font-family: "Outfit", sans-serif;
+}
+.container {
+    background-color: var(--color-White);
+    width: 60%;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+/* .image {
+    width: fit-content;
+} */
+Img {
+    width: 100%;
+    border-radius: 0.7rem;
+}
+h1{
+    font-size: 2rem;
+    font-family: "Young serif", sans-serif;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+li::marker{
+    color : var(--color-Nutmeg)
+}
+p {
+    font-size: 1rem;
+    color: var(--color-Dark_Charcoal);
+    opacity: 0.8;
+}
+h3 {
+    color: var(--color-Dark_Raspberry);
+    font-weight: 600;
+}
+h2 {
+    font-family: "Young serif" ;
+    color:var(--color-Dark_Raspberry);
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+.prep-time {
+    background-color: var(--color-Rose_White);
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    opacity: 0.8;
+    list-style-position:inside ;
+}
+b{
+    color : var(--color-Nutmeg);
+    font-weight: 700;
+}
+.line, .line1{
+    border-top: 0.5px solid var(--color-Light_Grey);
+}
+.line{
+    margin: 2rem 0;
+}
+ol{
+    padding: 0 1rem
+}
+ol>li{
+    list-style-position: outside;
+}
+
+.nutrients{
+    margin-top: 2rem ;
+}
+.nutrient {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: start;
+    align-items: center;
+    margin: 1rem 0;
+    p {
+        margin-left: 2rem;
+    }
+    b {
+        margin-left: 2rem;
+    }
+}
+@media (max-width : 475px){
+     .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+     }
+     main {
+        padding: 2rem;
+     }
+
+}
