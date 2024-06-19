@@ -34,7 +34,7 @@ Img {
 h1{
     font-size: 2rem;
     font-family: "Young serif", sans-serif;
-    margin-bottom: 2rem;
+    margin: 1.5rem 0;
     font-weight: 400;
 }
 li::marker{
